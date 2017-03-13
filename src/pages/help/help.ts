@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { NavController,MenuController,Nav,Platform } from 'ionic-angular';
+
 
 @Component({
   selector: 'page-help',
@@ -8,7 +8,7 @@ import { NavController,MenuController,Nav,Platform } from 'ionic-angular';
 })
 export class HelpPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor() {
 
   }
 

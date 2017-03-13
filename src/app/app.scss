@@ -14,3 +14,31 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+// #menu-header .scroll-content{
+// background-image:"D:\Project\Project practice\ionic2-app-base\src\assets\book.jpg"; 
+// }
+ .list-header-md{
+     font-family: Libre Baskerville;
+     font-size:25px;
+     color:white;
+    height:130px;
+    background: linear-gradient(to bottom, #f5a39e, #aa3831);
+}
+
+.item-md.item-block .item-inner {
+    border-bottom: none;
+}
+.list-md .item-block .item-inner {
+    border-bottom: none;
+}
+.item-md.item-block .item-inner {
+    padding-right: 8px;
+    border-bottom: none;
+}
+.item .icon .icon-badge {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  font-size: 8px;
+}

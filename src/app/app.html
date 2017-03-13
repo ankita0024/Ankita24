@@ -1,12 +1,52 @@
 <ion-menu [content]="content">
-    <ion-content>
-    <ion-list>
-        <ion-list-header>Navigate</ion-list-header>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="goHome()">Home</button>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="goSearch()">Home</button>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="goNotification()">Home</button>
-        <button menuClose ion-item *ngFor="let p of pages" (click)="goHelp()">Home</button>
-    </ion-list>
+<ion-content>
+        <ion-list-header>
+     <ion-row>
+        <ion-col width-45>
+                 <div class="image-content">
+                  <img src="www\assets\image.jpg" style="height:50px;width:50px;border-radius: 50%;">
+                 </div>
+         </ion-col>
+         <ion-col width-55>
+                 <div class="user-name" style="text-align: center;margin-top:20px;margin-right:10px;">
+                     Ankita Gupta
+                </div>
+                </ion-col>
+    </ion-row>
+       </ion-list-header>
+       
+       <ion-list>
+             <ion-row>
+                   <button menuClose ion-item (click)="openbookRead()"> 
+                    <ion-col width-5><ion-icon name="book"></ion-icon></ion-col>
+                     <ion-col width-80>Books Read</ion-col>
+                     <ion-col width-5><ion-icon name="arrow-forward"></ion-icon></ion-col>
+                    </button>
+             </ion-row>
+             <ion-row> 
+                   <button menuClose ion-item (click)="openRecommendation()">
+                    <ion-col width-10><ion-icon name="flower"></ion-icon></ion-col>
+                     <ion-col width-80>Recommendation</ion-col>
+                     <ion-col width-10><ion-icon name="arrow-forward"></ion-icon></ion-col>
+                   </button>
+             </ion-row>
+           <ion-row>    
+               <button menuClose ion-item (click)="openWishList()">
+                  <ion-col width-10><ion-icon name="heart-outline"></ion-icon></ion-col>
+                  <ion-col width-10> Wish List</ion-col>
+                   <ion-col width-10><ion-icon name="arrow-forward"></ion-icon></ion-col>
+                </button>
+         </ion-row>
+
+           <ion-row>
+               <button menuClose ion-item (click)="doLogout()"> 
+                   <ion-col width-10><ion-icon name="log-out"></ion-icon></ion-col>
+                   <ion-col width-80>Logout</ion-col>
+                   <ion-col width-10><ion-icon name="arrow-forward"></ion-icon></ion-col>
+                </button>
+           </ion-row>        
+     </ion-list>
+   
     </ion-content>
 </ion-menu>
 <ion-nav [root]="rootPage" #content></ion-nav>
