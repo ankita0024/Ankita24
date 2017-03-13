@@ -1,3 +1,4 @@
+
 import { HelpPage } from './../pages/help/help';
 import { Component,ViewChild } from '@angular/core';
 import { Platform,Nav } from 'ionic-angular';
@@ -26,16 +27,17 @@ export class MyApp {
   }
   openBookRead()
 {
-  this.nav.setRoot(BookReadPage);
+  this.nav.push(BookReadPage);
 } 
  openRecommendation()
 {
-  this.nav.setRoot(RecommendationPage);
+  this.nav.push(RecommendationPage);
 } 
  openWishList()
 {
-  this.nav.setRoot(WishListPage);
+  this.nav.push(WishListPage);
 }
+
 // doLogout(){
 //    this.userData.logout();
 // }
