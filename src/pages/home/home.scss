@@ -1,23 +1,145 @@
+page-home {
+   
+    .headerColor .toolbar-title .toolbar-title-md{
+color: white;
+    }
+    .toolbar-background{
+background-color: #bc2323;
+    }
+    .toolbar-title-md{
+        color:white;
+    }
+    .bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default{
+        color:white;
+    }
+    .divTitle {
+    margin-top: 4%;
+     font-family: "catamaran";
+    font-weight: bold;
 
-ion-card img{
-    opacity: 0.8;
-    height:120px;
+  display:inline-block;
+  color:#bc2323;
+//   line-height: 2;
+  font-size: 20px;
+//   padding-left: 2vh;
+//   padding-bottom: 1vh;
 }
-.button-clear-md{
+.bookImg {
+  height: 18vh;
+width: initial;
+//   width:100%;
+}
+
+
+.bookDiv{
     width:100%;
 }
-.button-name{
-    text-align: center;
+.homePage{
+  margin-top: 4.8em;
+  overflow-y: auto;
+  height: 80%;
+  font-family: "roboto";
+  background-color: #E0E0E0!important;
+  
+  
+  
 }
-.card-md p{
-    font-size: 1.2rem;
+.myHome {
+  /*background-color: ;*/
+  color: #2980b9;
+  font-size: 18pt;
+  font-family: 'Berlin Sans FB';
+  text-align: center;
 }
-.ion-md-home:before{
-    margin-right:10px;
+.myHomePage {
+  padding: 5%;
+  align-content: center;
+  /*margin-left: 45%;*/
+  position: relative;
+  -webkit-animation: myfirst 10s infinite;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-direction: alternate;
+  /* Chrome, Safari, Opera */
+  animation: myfirst 10s infinite;
+  animation-direction: alternate;
 }
-.toolbar-title-md{
-    color:white;
+.bookDetails {
+    text-align: right;
 }
-.toolbar-background-md{
-    background:#424242;
+
+.bookTitle {
+    // font-family: "Berlin Sans FB";
+    // font-size: 20pt;
+    // line-height: 3vh;
+        font-family: "catamaran";
+    font-size: 14pt;
+    font-weight: 600;
+    /* font-weight: lighter; */
+    // text-transform: lowercase
+}
+
+
+
+
+
+.generalInfo {
+  padding-top: 1vh;
+}
+.dashboard {
+    height: 20vh;
+}
+.issueInfo3 {
+  background-color: #2980b9;
+}
+
+.generalInfo .issueInfo .issueInfoText {
+  /*padding: 0;*/
+  line-height: 0.5;
+  font-size: 12pt;
+}
+.issuedCircle1{
+    float:right;
+    border-radius:50%;
+    border-right:5px solid #BDBDBD;
+    // border-top:5px solid  linear-gradient( blue , grey);
+    border-bottom: 5px solid #BDBDBD;
+    border-left:5px solid #283593;
+       width: 3.2em;
+    height: 3.2em;
+    margin-top: 3%;
+}
+.issuedCircle2{
+    float:right;
+    border-radius:50%;
+    border-right:5px solid #BDBDBD;
+    // border-top:5px solid  linear-gradient( blue , grey);
+    border-bottom: 5px solid #283593;
+    border-left:5px solid #283593;
+       width: 3.2em;
+    height: 3.2em;
+    margin-top: 3%;
+}
+.issuedCircle3{
+    float:right;
+    border-radius:50%;
+    border-right:5px solid #283593;
+    border-top:5px solid  #283593;
+    border-bottom: 5px solid #283593;
+    border-left:5px solid #283593;
+      width: 3.2em;
+    height: 3.2em;
+    margin-top: 3%;
+    .Circletext{
+       margin: 0.3em;
+    }
+}
+.Circletext{
+    // margin:0 auto;
+    color:#bc2323;
+   text-align: center;
+    margin: 0.5em auto;
+    font-size: 1.2em;
+     font-family: 'catamaran';
+     font-weight: 700;
+}
 }

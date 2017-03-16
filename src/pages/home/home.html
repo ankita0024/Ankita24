@@ -1,63 +1,36 @@
-<ion-header>
-  <ion-navbar >
-    <ion-title>
-     <ion-icon name="home"></ion-icon> Kalinga Library
-    </ion-title>  
+
+<ion-header  >
+  <ion-navbar  >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Kalinga Library</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content class="card-background-page">
-  <ion-row>
-  <ion-col width-50>
-    <ion-card>
-  <img src="http://www.brainline.org/images/uploads/orig/2013/017722.jpg">
-       <button ion-button icon-left clear small (click)="listOfBooks()">
-        <p class="button-name">List of books</p>
-      </button>
-</ion-card>
-</ion-col>
-<ion-col width-50>
- <ion-card>
-  <img src="http://opentickets.com/wp-content/uploads/2013/06/roles-and-permission.jpg">
-       <button ion-button icon-left clear small (click)="roles()">
-        <p class="button-name">Roles & Permissions</p>
-      </button>
-</ion-card>
-</ion-col>
-</ion-row>
+<ion-content class="home-page" >
+  <ion-img width="100%" height="200px" src="./assets/images/welcome.jpg"></ion-img>
+<ion-item  >
+<p class="divTitle">My Books</p>
+<div><p class="Circletext">1/3</p></div>
+</ion-item>
 
-
-<ion-row>
-  <ion-col width-50>
- <ion-card>
-  <img src="http://www.steptwo.com.au/wp-content/uploads/approval-projects-w.jpg">
-       <button ion-button icon-left clear small (click)="approvals()">
-       <p class="button-name">Approval</p>
-      </button>
+<ion-card>
+    <ion-row class="bookDiv">
+    <ion-col width-33>
+        <img class="img-thumbnail bookImg" src="./assets/images/9.png" alt="book Image">
+    </ion-col>
+    <ion-col width-67 class="rightAlign">
+        <!--<ion-row>-->
+        <span class="bookTitle">Book title</span><br>
+        <span class="bookAuthor">Book Author<br></span>
+        
+        <span class="bookRenewDetails">Due Date:</span> <span class="dueDate" ></span><br>
+        <!--</ion-row>-->
+ 
+    </ion-col>
+    </ion-row>
 </ion-card>
-</ion-col>
-  <ion-col width-50>
- <ion-card>
-  <img src="https://cdn.bigdecisions.com/images/wp-content/uploads/2016/07/24123657/Co-sign-640x320.jpg">
-       <button ion-button icon-left clear small (click)="transferAdmin()">
-       <p class="button-name">Transfer Admin access</p>
-      </button>
-</ion-card>
-</ion-col>
-  </ion-row>
 
-
-  <ion-row>
-    <ion-col width-25></ion-col>
-    <ion-col width-50>
- <ion-card>
-  <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTDKy2fXlDzLFO0V3xFZo9_fkaqXpjnzzuQTuXktaQ9cdD20jy-">
-       <button ion-button icon-left clear small >
-        <p class="button-name">Reports</p>
-      </button>
-</ion-card>
-</ion-col>
-<ion-col width-25></ion-col>
-</ion-row>
 </ion-content>
 

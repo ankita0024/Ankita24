@@ -1,8 +1,10 @@
+import { RecommendationPage } from './../recommendation/recommendation';
+import { Splashscreen } from 'ionic-native';
 import { Component } from '@angular/core';
-import { HelpPage } from '../help/help';
 import { HomePage } from '../home/home';
 import { SearchPage } from '../search/search';
 import { NotificationPage } from '../notification/notification';
+
 
 @Component({
   templateUrl: 'tabs.html'
@@ -13,7 +15,7 @@ export class TabsPage {
   tab1Root: any = HomePage;
   tab2Root: any = SearchPage;
   tab3Root: any = NotificationPage;
-  tab4Root: any = HelpPage;
+  tab4Root: any = RecommendationPage;
   constructor() {
 
   }
